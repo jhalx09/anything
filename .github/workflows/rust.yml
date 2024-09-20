@@ -25,18 +25,8 @@ jobs:
         name: code-coverage-report
         path: output/test/code-coverage.html
 
-
-name: Main
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-
-jobs:
-  build:
+  release:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
