@@ -1,13 +1,6 @@
 [package]
-name = "anything"
+name = "hello_world"
 version = "0.1.0"
 edition = "2021"
-
-
-
-[[bin]]
-name = "aa"
-path = "src/aa.rs"
-
 
 [dependencies]
