@@ -1,6 +1,14 @@
 [package]
-name = "hello_world"
+name = "anything"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+
+[[bin]]
+name = "anycore"
+path = "src/bin/anycore.rs"
+
+[[bin]]
+name = "anytest"
+path = "src/bin/anytest.rs"
