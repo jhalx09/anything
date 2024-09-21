@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: install must file
-      run: rustup target list
+      run: apt install gcc-mingw-w64-x86-64 -y
     - name: Build
       run: cargo build --verbose  --target=x86_64-pc-windows-gnu
     - name: Run tests
