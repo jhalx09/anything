@@ -20,6 +20,7 @@ jobs:
     - name: install must file
       run: 
       - rustup target list
+      - ls
     - name: Build
       run: cargo build --verbose  --target=x86_64-pc-windows-gnu
     - name: Run tests
